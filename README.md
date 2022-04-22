@@ -1,2 +1,2 @@
 # K8Test
-pls work
+A test for the kubernetes
