@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-test
+  template:
+    metadata:
+      labels:
+        app: node-test
+    spec:
+      containers:
+      - name: node-test
+        image: reybun/k8-test
+        imagePullPolicy: Always
